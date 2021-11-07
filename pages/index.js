@@ -22,7 +22,7 @@ const Home = () => {
         <Cell>
           <Name><Nickname>Val</Nickname>entin Georgiev</Name>
           <Hr />
-          <Greeting>Hello, I'm a Software Engineer and dog lover.<br /> Learn more about me or my work here.</Greeting>
+          <Greeting>Hello, I&apos;m a Software Engineer and dog lover.<br /> Learn more about me or my work here.</Greeting>
 
           <div>
             <NavLink>Skills</NavLink>
