@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components'
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Valentin Georgiev | Software Engineer</title>
         <meta name="description" content="Valentin Georgiev - Software Engineer - Javascript, Reactjs, Nextjs" />
@@ -17,14 +17,12 @@ const Home = () => {
 
       <Header>
         <Cell small>
-          <ImageContainer>
-            <Image src="/images/me-hq.jpg" alt="Valentin Georgiev" />
-          </ImageContainer>
+          <Image src="/images/me-hq.jpg" alt="Valentin Georgiev" />
         </Cell>
         <Cell>
           <Name><Nickname>Val</Nickname>entin Georgiev</Name>
           <Hr />
-          <Greeting>Hello, I'm a Software Engineer.<br /> Learn more about me or my work here.</Greeting>
+          <Greeting>Hello, I'm a Software Engineer and dog lover.<br /> Learn more about me or my work here.</Greeting>
 
           <div>
             <NavLink>Skills</NavLink>
@@ -37,24 +35,25 @@ const Home = () => {
         </Cell>
       </Header>
 
-    </div>
+    </>
   )
 }
-
-const ImageContainer = styled.div`
-  max-width: 300px;
-  max-height: 300px;
-`
 
 const Image = styled.img`
   border-radius: 50%;
   width: 100%;
+  max-width: 300px;
+  max-height: 300px;
   box-shadow: 0px 5px 15px #91919126;
 `
 
 const Header = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: ${colors.blue03};
   padding: 40px;
+  height: 100%;
 `
 
 const Cell = styled.div`
@@ -65,11 +64,14 @@ const Cell = styled.div`
 
   ${props => props.small && css`
     width: 35%;
+    text-align: center;
   `}
 `
 
 const Name = styled.h1`
   font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 30px;
   color: ${colors.grey01};
 `
 const Nickname = styled.span`
@@ -78,7 +80,7 @@ const Nickname = styled.span`
 `
 
 const Hr = styled.hr`
-  width: 300px;
+  width: 400px;
   border: 2px solid ${colors.white};
   margin: 0;
 `
@@ -87,13 +89,17 @@ const Greeting = styled.p`
   font-size: 26px;
   color: ${colors.grey01};
   line-height: 34px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 `
 
 const NavLink = styled.span`
   color: ${colors.grey01};
-  margin-right: 10px;
+  margin-right: 15px;
   border-bottom: 1px solid ${colors.grey01};
   padding-bottom: 2px;
+  font-size: 16px;
+  cursor: pointer;
 `
 
 export default Home
