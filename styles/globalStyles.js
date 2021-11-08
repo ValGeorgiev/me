@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import colors from './colors';
 import fonts from './fonts'
 
 const GlobalStyle = createGlobalStyle`
@@ -9,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     overflow-x: hidden;
     font-family: ${fonts.fontFamilyRegular};
+    scroll-behavior: smooth;
+    background: ${colors.blue03};
   }
 
   #__next {
