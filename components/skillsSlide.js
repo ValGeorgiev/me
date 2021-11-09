@@ -26,13 +26,16 @@ const SkillsSlide = () => {
           <Skill>Typescript</Skill>
           <Skill>Vue.js</Skill>
           <Skill>AWS</Skill>
+          <Skill>Serverless</Skill>
           <Skill>Salesforce Commerce Cloud</Skill>
           <Skill>Animations</Skill>
-          <Skill>Progressive Web Apps</Skill>
+          <Skill>Progressive Web App</Skill>
           <Skill>Performance optimizations</Skill>
-          <Skill>Webpack/Rollup/Parcel</Skill>
+          <Skill>Webpack & Babel</Skill>
+          <Skill>Leading teams</Skill>
         </List>
       </Cell>
+      <BGImage src="/images/me-presenting.jpg" />
     </Container>
   )
 }
@@ -43,6 +46,7 @@ const Cell = styled.div`
   text-align: center;
   color: ${colors.white};
   vertical-align: top;
+  z-index: 2;
 `
 
 const List = styled.ul`
@@ -58,6 +62,13 @@ const Skill = styled.li`
 
 const Container = styled.div`
   display: flex;
+`
+
+const BGImage = styled.img`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 `
 
 export default SkillsSlide

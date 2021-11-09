@@ -22,7 +22,7 @@ const Home = () => {
       <Slide>
         <FirstSlide />
       </Slide>
-      <Slide id="skills">
+      <Slide id="skills" overflow>
         <SkillsSlide />
       </Slide>
       <Slide id="portfolio" column>
@@ -44,9 +44,14 @@ const Slide = styled.div`
   background: ${colors.blue03};
   padding: 40px;
   height: 100%;
+  position: relative;
 
   ${props => props.column && css`
     flex-direction: column;
+    justify-content: start;
+  `}
+  ${props => props.overflow && css`
+    overflow: hidden;
   `}
 `
 

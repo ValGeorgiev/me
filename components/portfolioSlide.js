@@ -9,9 +9,7 @@ const PortfolioSlide = () => {
       <Container>
         <Cell>
           <Wrapper>
-            <div>
-              <Image src="/images/social-cmg.png" alt="Crypto Management Group" />
-            </div>
+            <Image src="/images/social-cmg.png" alt="Crypto Management Group" />
             <InfoContainer className="more-info">
               <InfoWrapper>
                 <span>Click for more information</span>
@@ -21,9 +19,7 @@ const PortfolioSlide = () => {
         </Cell>
         <Cell>
           <Wrapper>
-            <div>
-              <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
-            </div>
+            <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
             <InfoContainer className="more-info">
               <InfoWrapper>
                 <span>Click for more information</span>
@@ -35,9 +31,7 @@ const PortfolioSlide = () => {
       <Container>
         <Cell>
           <Wrapper>
-            <div>
-              <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
-            </div>
+            <Image src="/images/social-adidas.png" alt="adidas" />
             <InfoContainer className="more-info">
               <InfoWrapper>
                 <span>Click for more information</span>
@@ -47,9 +41,29 @@ const PortfolioSlide = () => {
         </Cell>
         <Cell>
           <Wrapper>
-            <div>
-              <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
-            </div>
+            <Image src="/images/social-thetimes.png" alt="The Times & The Sunday Times" />
+            <InfoContainer className="more-info">
+              <InfoWrapper>
+                <span>Click for more information</span>
+              </InfoWrapper>
+            </InfoContainer>
+          </Wrapper>
+        </Cell>
+      </Container>
+      <Container>
+        <Cell>
+          <Wrapper>
+            <Image src="/images/social-newskit.png" alt="NewsKit" />
+            <InfoContainer className="more-info">
+              <InfoWrapper>
+                <span>Click for more information</span>
+              </InfoWrapper>
+            </InfoContainer>
+          </Wrapper>
+        </Cell>
+        <Cell>
+          <Wrapper>
+            <Image src="/images/social-thetimes.png" alt="The Times & The Sunday Times" />
             <InfoContainer className="more-info">
               <InfoWrapper>
                 <span>Click for more information</span>
@@ -61,16 +75,6 @@ const PortfolioSlide = () => {
     </>
   )
 }
-
-const rotate = keyframes`
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.2);
-  }
-`;
 
 const Title = styled.h2`
   color: ${colors.white};
@@ -89,7 +93,7 @@ const Cell = styled.div`
   &:hover {
 
     & img {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
 
     .more-info {
@@ -102,12 +106,14 @@ const Wrapper = styled.div`
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+  background: ${colors.white};
+  height: 100%;
 `
-
 
 const Image = styled.img`
   width: 100%;
   transition: transform .5s ease;
+  height: 100%;
 `
 
 const InfoContainer = styled.div`
@@ -137,5 +143,12 @@ const Container = styled.div`
 const Clarification = styled.p`
   color: ${colors.white};
 `
+
+const ImageWrapper = styled.div`
+  height: 100%;
+  padding: 80px 40px;
+`
+
+const AdidasWrapper = styled.div``
 
 export default PortfolioSlide
