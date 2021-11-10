@@ -5,7 +5,7 @@ const SkillsSlide = () => {
   return (
     <Container>
       <Cell>
-        <div>Expert</div>
+        <Title>Expert</Title>
         <List>
           <Skill>Javascript</Skill>
           <Skill>React.js</Skill>
@@ -21,7 +21,7 @@ const SkillsSlide = () => {
         </List>
       </Cell>
       <Cell>
-        <div>Pro</div>
+        <Title>Pro</Title>
         <List>
           <Skill>Typescript</Skill>
           <Skill>Vue.js</Skill>
@@ -36,6 +36,7 @@ const SkillsSlide = () => {
         </List>
       </Cell>
       <BGImage src="/images/me-presenting.jpg" />
+      <BGImage oposite src="/images/me-presenting.jpg" />
     </Container>
   )
 }
@@ -44,9 +45,13 @@ const Cell = styled.div`
   display: inline-block;
   width: 50%;
   text-align: center;
-  color: ${colors.white};
+  color: ${colors.blue03};
   vertical-align: top;
   z-index: 2;
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  height: 100%;
+  border: 1px solid ${colors.blue03};
 `
 
 const List = styled.ul`
@@ -54,14 +59,24 @@ const List = styled.ul`
   list-style-type: none;
   display: inline-block;
   text-align: left;
+  padding: 0 40px 40px;
+  margin-top: 0;
 `
 
 const Skill = styled.li`
   margin: 10px 0;
+  color: ${colors.blue03};
+  font-size: 20px;
+`
+
+const Title = styled.h4`
+  text-align: left;
+  font-size: 28px;
 `
 
 const Container = styled.div`
   display: flex;
+  height: 100%;
 `
 
 const BGImage = styled.img`
@@ -69,6 +84,11 @@ const BGImage = styled.img`
   right: 0;
   bottom: 0;
   z-index: 1;
+
+  ${props => props.oposite && css`
+    transform: rotateY(180deg);
+    left: 0;
+  `}
 `
 
 export default SkillsSlide

@@ -22,7 +22,7 @@ const Home = () => {
       <Slide>
         <FirstSlide />
       </Slide>
-      <Slide id="skills" overflow>
+      <Slide id="skills" flow>
         <SkillsSlide />
       </Slide>
       <Slide id="portfolio" column>
@@ -42,7 +42,7 @@ const Slide = styled.div`
   justify-content: center;
   align-items: center;
   background: ${colors.blue03};
-  padding: 40px;
+  padding: 0 40px;
   height: 100%;
   position: relative;
 
@@ -50,7 +50,7 @@ const Slide = styled.div`
     flex-direction: column;
     justify-content: start;
   `}
-  ${props => props.overflow && css`
+  ${props => props.flow && css`
     overflow: hidden;
   `}
 `
