@@ -1,23 +1,12 @@
 import styled, { css } from 'styled-components'
 import colors from '../styles/colors'
 
-const ContactSlide = () => {
+const MyselfSlide = () => {
   return (
     <Container>
-      <Title>You can contact me as well.</Title>
-      <Summary>I will respond for sure if you are looking for someone to build your website, mobile application or any other software or if you are software engineer who is looking for a career advice or just wants to explore new opportunities.</Summary>
-      <Wrapper>
-        <ButtonsWrapper>
-          <SocialLink href="https://www.linkedin.com/in/val-georgiev/" target="_blank">
-            <Logo src="/images/linkedin.svg" />
-            <Label>/val-georgiev</Label>
-          </SocialLink>
-          <SocialLink href="mailto:valentin.al.georgiev@gmail.com">
-            <Logo src="/images/mail.svg" />
-            <Label>valentin.al.georgiev@gmail.com</Label>
-          </SocialLink>
-        </ButtonsWrapper>
-      </Wrapper>
+      <Title>Me, myself and I</Title>
+      <Summary>If you are interested in me, here is the right place.</Summary>
+
     </Container>
   )
 }
@@ -67,4 +56,4 @@ const SocialLink = styled.a`
   display: block;
 `
 
-export default ContactSlide
+export default MyselfSlide

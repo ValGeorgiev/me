@@ -16,9 +16,9 @@ const HelloSlide = () => {
         <div>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#portfolio">Portfolio</NavLink>
-          <NavLink>Me, myself and I</NavLink>
+          <NavLink href="#myself">Me, myself and I</NavLink>
           <NavLink>Blog</NavLink>
-          <NavLink>Contact me</NavLink>
+          <NavLink href="#contact">Contact me</NavLink>
         </div>
       </Cell>
     </>

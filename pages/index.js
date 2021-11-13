@@ -7,6 +7,7 @@ import FirstSlide from '../components/helloSlide'
 import SkillsSlide from '../components/skillsSlide'
 import ContactSlide from '../components/contactSlide'
 import PortfolioSlide from '../components/portfolioSlide'
+import MyselfSlide from '../components/myselfSlide'
 
 const Home = () => {
   return (
@@ -28,7 +29,10 @@ const Home = () => {
       <Slide id="portfolio" column>
         <PortfolioSlide />
       </Slide>
-      <Slide>
+      <Slide id="myself" column>
+        <MyselfSlide />
+      </Slide>
+      <Slide id="contact">
         <ContactSlide />
       </Slide>
 
@@ -49,6 +53,7 @@ const Slide = styled.div`
   ${props => props.column && css`
     flex-direction: column;
     justify-content: start;
+    padding-top: 20px;
   `}
   ${props => props.flow && css`
     overflow: hidden;
