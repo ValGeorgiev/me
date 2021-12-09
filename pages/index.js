@@ -23,7 +23,7 @@ const Home = () => {
       <Slide>
         <FirstSlide />
       </Slide>
-      <Slide id="skills" flow>
+      <Slide id="skills" noHeight>
         <SkillsSlide />
       </Slide>
       <Slide id="portfolio" column>
@@ -40,12 +40,21 @@ const Home = () => {
   )
 }
 
+const Container = styled.div`
+  padding: 40px 50px;
+  background: ${colors.white};
+`
+
+const Wrapper = styled.div`
+  padding: 40px;
+  background: ${colors.blue03};
+  border-radius: 40px;
+`
 
 const Slide = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${colors.blue03};
   padding: 0 40px;
   height: 100%;
   position: relative;
@@ -54,10 +63,15 @@ const Slide = styled.div`
     flex-direction: column;
     justify-content: start;
     padding-top: 20px;
+    height: auto;
   `}
   ${props => props.flow && css`
     overflow: hidden;
   `}
+  ${props => props.noHeight && css`
+    height: auto;
+  `}
 `
+
 
 export default Home

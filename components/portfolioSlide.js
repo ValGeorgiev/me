@@ -63,7 +63,19 @@ const PortfolioSlide = () => {
         </Cell>
         <Cell>
           <Wrapper>
-            <Image src="/images/social-thetimes.png" alt="The Times & The Sunday Times" />
+            <Image src="/images/social-florence.png" alt="Tourist guide in Florence" />
+            <InfoContainer className="more-info">
+              <InfoWrapper>
+                <span>Click for more information</span>
+              </InfoWrapper>
+            </InfoContainer>
+          </Wrapper>
+        </Cell>
+      </Container>
+      <Container>
+        <Cell>
+          <Wrapper>
+            <Image src="/images/social-wzrds.jpg" alt="WZRDS" />
             <InfoContainer className="more-info">
               <InfoWrapper>
                 <span>Click for more information</span>

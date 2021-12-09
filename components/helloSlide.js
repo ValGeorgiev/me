@@ -11,13 +11,12 @@ const HelloSlide = () => {
       <Cell>
         <Name><Nickname>Val</Nickname>entin Georgiev</Name>
         <Hr />
-        <Greeting>Hello, I&apos;m a Software Engineer and dog lover.<br /> Learn more about me or my work here.</Greeting>
+        <Greeting>Hello, I&apos;m a Software Engineer and dog lover.<br /> Learn more about me and my work here.</Greeting>
 
         <div>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#portfolio">Portfolio</NavLink>
           <NavLink href="#myself">Me, myself and I</NavLink>
-          <NavLink>Blog</NavLink>
           <NavLink href="#contact">Contact me</NavLink>
         </div>
       </Cell>
@@ -27,6 +26,7 @@ const HelloSlide = () => {
 
 const Image = styled.img`
   border-radius: 50%;
+  border: 10px solid ${colors.white};
   width: 100%;
   max-width: 300px;
   max-height: 300px;
@@ -52,6 +52,7 @@ const Name = styled.h1`
   margin-bottom: 30px;
   color: ${colors.grey01};
 `
+
 const Nickname = styled.span`
   font-size: 48px;
   color: ${colors.white};
