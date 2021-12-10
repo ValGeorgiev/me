@@ -1,33 +1,11 @@
-import styled, { keyframes } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 import colors from '../styles/colors'
 
 const PortfolioSlide = () => {
   return (
     <>
       <Title>Projects</Title>
-      <Clarification>All projects listed below are result of a hard team work. I have described what part of every project I did.</Clarification>
-      <Container>
-        <Cell>
-          <Wrapper>
-            <Image src="/images/social-cmg.png" alt="Crypto Management Group" />
-            <InfoContainer className="more-info">
-              <InfoWrapper>
-                <span>Click for more information</span>
-              </InfoWrapper>
-            </InfoContainer>
-          </Wrapper>
-        </Cell>
-        <Cell>
-          <Wrapper>
-            <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
-            <InfoContainer className="more-info">
-              <InfoWrapper>
-                <span>Click for more information</span>
-              </InfoWrapper>
-            </InfoContainer>
-          </Wrapper>
-        </Cell>
-      </Container>
+      <Clarification>All projects listed below are result of a hard team work.<br /> I have described what part of every project I did, just select a project and explore.</Clarification>
       <Container>
         <Cell>
           <Wrapper>
@@ -42,6 +20,28 @@ const PortfolioSlide = () => {
         <Cell>
           <Wrapper>
             <Image src="/images/social-thetimes.png" alt="The Times & The Sunday Times" />
+            <InfoContainer className="more-info">
+              <InfoWrapper>
+                <span>Click for more information</span>
+              </InfoWrapper>
+            </InfoContainer>
+          </Wrapper>
+        </Cell>
+      </Container>
+      <Container>
+        <Cell>
+          <Wrapper>
+            <Image src="/images/social-cmg.png" alt="Crypto Management Group" />
+            <InfoContainer className="more-info">
+              <InfoWrapper>
+                <span>Click for more information</span>
+              </InfoWrapper>
+            </InfoContainer>
+          </Wrapper>
+        </Cell>
+        <Cell>
+          <Wrapper>
+            <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
             <InfoContainer className="more-info">
               <InfoWrapper>
                 <span>Click for more information</span>
@@ -83,6 +83,20 @@ const PortfolioSlide = () => {
             </InfoContainer>
           </Wrapper>
         </Cell>
+        <Cell>
+          <a href="mailto:valentin.al.georgiev@gmail.com">
+            <Wrapper contactme>
+              <Image visibilityHidden src="/images/social-wzrds.jpg" alt="WZRDS" />
+              <HoverMe id="hover-me">Hover me!</HoverMe>
+              <ContactMe id="contact-me">Contact me! <br /> Let's build your project and add it here!</ContactMe>
+              <InfoContainer className="more-info">
+                <InfoWrapper>
+                  <span>Click for more information</span>
+                </InfoWrapper>
+              </InfoContainer>
+            </Wrapper>
+          </a>
+        </Cell>
       </Container>
     </>
   )
@@ -121,12 +135,48 @@ const Wrapper = styled.div`
   overflow: hidden;
   background: ${colors.white};
   height: 100%;
+
+  ${props => props.contactme && css`
+
+    &:hover {
+      & #hover-me {
+        top: -80px;
+      }
+      & #contact-me {
+        bottom: calc(50% - 65px);
+      }
+    } 
+  `}
 `
 
 const Image = styled.img`
   width: 100%;
   transition: transform .5s ease;
   height: 100%;
+
+  ${props => props.visibilityHidden && css`
+    visibility: hidden;
+  `}
+`
+
+const HoverMe = styled.p`
+  color: ${colors.blue03};
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 65px);
+  font-size: 24px;
+  transition: all .2s ease-in-out;
+`
+
+const ContactMe = styled.p`
+  color: ${colors.blue03};
+  position: absolute;
+  bottom: -120px;
+  left: calc(50% - 240px);
+  font-size: 24px;
+  padding: 0 70px;
+  line-height: 28px;
+  transition: all .2s ease-in-out;
 `
 
 const InfoContainer = styled.div`
@@ -151,17 +201,17 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const Clarification = styled.p`
   color: ${colors.white};
+  text-align: center;
+  line-height: 24px;
 `
-
-const ImageWrapper = styled.div`
-  height: 100%;
-  padding: 80px 40px;
-`
-
-const AdidasWrapper = styled.div``
 
 export default PortfolioSlide

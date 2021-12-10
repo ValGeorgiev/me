@@ -43,6 +43,7 @@ const ButtonsWrapper = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 100px 0;
 `
 
 const Wrapper = styled.div`

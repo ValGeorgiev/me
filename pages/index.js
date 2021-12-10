@@ -19,36 +19,31 @@ const Home = () => {
       </Head>
       <GlobalFonts />
       <GlobalStyle />
-
-      <Slide>
-        <FirstSlide />
-      </Slide>
-      <Slide id="skills" noHeight>
-        <SkillsSlide />
-      </Slide>
-      <Slide id="portfolio" column>
-        <PortfolioSlide />
-      </Slide>
-      <Slide id="myself" column>
-        <MyselfSlide />
-      </Slide>
-      <Slide id="contact">
-        <ContactSlide />
-      </Slide>
-
+      <Container>
+        <Slide first>
+          <FirstSlide />
+        </Slide>
+        <Slide id="skills" noHeight>
+          <SkillsSlide />
+        </Slide>
+        <Slide id="portfolio" column>
+          <PortfolioSlide />
+        </Slide>
+        <Slide id="myself" column>
+          <MyselfSlide />
+        </Slide>
+        <Slide id="contact">
+          <ContactSlide />
+        </Slide>
+      </Container>
     </>
   )
 }
 
 const Container = styled.div`
-  padding: 40px 50px;
-  background: ${colors.white};
-`
-
-const Wrapper = styled.div`
-  padding: 40px;
-  background: ${colors.blue03};
-  border-radius: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
 `
 
 const Slide = styled.div`
@@ -70,7 +65,21 @@ const Slide = styled.div`
   `}
   ${props => props.noHeight && css`
     height: auto;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   `}
+
+  ${props => props.first && css`
+    
+    @media screen and (max-width: 950px) {
+      flex-direction: column
+    }
+  `}
+
+  @media screen and (max-width: 768px) {
+    padding: 0 20px;
+  }
 `
 
 

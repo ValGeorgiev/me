@@ -33,6 +33,10 @@ const Summary = styled.p`
   max-width: 1000px;
   line-height: 28px;
   font-size: 20px;
+
+  @media screen and (max-width: 1100px) {
+    max-width: 800px;
+  }
 `
 
 const Logo = styled.img`

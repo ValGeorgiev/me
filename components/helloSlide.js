@@ -31,6 +31,12 @@ const Image = styled.img`
   max-width: 300px;
   max-height: 300px;
   box-shadow: 0px 5px 15px #91919126;
+  
+  @media screen and (max-width: 950px) {
+    margin-bottom: 30px;
+    max-width: 250px;
+    max-height: 250px;
+  }
 `
 
 
@@ -40,10 +46,29 @@ const Cell = styled.div`
   vertical-align: top;
   padding: 0 40px;
 
+  @media screen and (max-width: 950px) {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
   ${props => props.small && css`
     width: 35%;
     text-align: center;
+
+    @media screen and (max-width: 950px) {
+      text-align: left;
+    }
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   `}
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
 `
 
 const Name = styled.h1`
@@ -62,6 +87,11 @@ const Hr = styled.hr`
   width: 400px;
   border: 2px solid ${colors.white};
   margin: 0;
+
+
+  @media screen and (max-width: 768px) {
+    width: 270px;
+  }
 `
 
 const Greeting = styled.p`

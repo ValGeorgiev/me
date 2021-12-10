@@ -12,6 +12,7 @@ const SkillsSlide = () => {
   const graphRef = useRef(null)
   const mongoRef = useRef(null)
   const nextRef = useRef(null)
+  const rnRef = useRef(null)
 
   return (
     <Container>
@@ -42,22 +43,26 @@ const SkillsSlide = () => {
       </Cell>
       <Cell fullWidth>
         <Title>Expertise</Title>
+        <Disclaimer>
+          These are the languages/frameworks which I most skilled with. I have experience with many other languages and libraries, where I am not an expert, but I can help.
+        </Disclaimer>
         <List>
+          <FirstRow>
+            <Skill mobileJs center medium ref={jsRef}>Javascript</Skill>
+            <Skill right medium ref={htmlRef}>HTML & CSS</Skill>
+          </FirstRow>
           <div>
-            <Skill center ref={jsRef}>Javascript</Skill>
-            <Skill right ref={htmlRef}>HTML & CSS</Skill>
-          </div>
-          <div>
-            <Skill margin ref={tsRef} tsSkill>Typescript</Skill>
+            <Skill margin medium ref={tsRef} tsSkill>Typescript</Skill>
             <Skill margin ref={reactRef}>React.js</Skill>
           </div>
           <div>
             <Skill ref={nodeRef}>Node.js</Skill>
+            <Skill margin medium ref={rnRef} rnSkill>React Native</Skill>
             <Skill right ref={nextRef}>Next.js</Skill>
           </div>
           <div>
-            <Skill margin ref={graphRef}>GraphQL</Skill>
-            <Skill margin ref={mongoRef}>MongoDB</Skill>
+            <Skill margin regular ref={graphRef}>GraphQL</Skill>
+            <Skill margin regular ref={mongoRef}>MongoDB</Skill>
           </div>
           <Xarrow
             start={jsRef}
@@ -90,6 +95,14 @@ const SkillsSlide = () => {
           <Xarrow
             start={reactRef}
             end={nextRef}
+            strokeWidth={2}
+            animateDrawing
+            headSize={0}
+            lineColor={colors.blue02}
+          />
+          <Xarrow
+            start={reactRef}
+            end={rnRef}
             strokeWidth={2}
             animateDrawing
             headSize={0}
@@ -130,12 +143,12 @@ const SkillsSlide = () => {
             endAnchor="top"
           />
           <div>
-            <Skill>Testing</Skill>
+            <Skill regular>Testing</Skill>
             <Skill>CI/CD</Skill>
             <Skill>AWS</Skill>
           </div>
           <div>
-            <Skill>Salesforce Commerce Cloud</Skill>
+            <Skill huge>Salesforce Commerce Cloud</Skill>
           </div>
         </List>
       </Cell>
@@ -154,7 +167,14 @@ const Cell = styled.div`
   ${props => props.fullWidth && css`
     width: 100%;
     display: block;
+    margin-top: 80px;
   `}
+
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 10px 0;
+  }
 `
 
 const CellWrapper = styled.div`
@@ -210,7 +230,6 @@ const Skill = styled.li`
   border: 2px dashed ${colors.white};
   color: ${colors.white};
   font-size: 20px;
-  padding: 20px;
   border-top-left-radius: 5px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 25px;
@@ -218,13 +237,21 @@ const Skill = styled.li`
   transition: .5s;
   height: 70px;
   display: inline-block;
+  width: 120px;
+  text-align: center;
+  line-height: 70px;
 
   &:hover {
     border: 2px dashed ${colors.blue02};
+    font-size: 22px;
   }
 
   ${props => props.margin && css`
     margin: 60px 80px;
+
+    @media screen and (max-width: 820px) {
+      margin: 60px 30px;
+    }
   `}
 
   ${props => props.center && css`
@@ -232,6 +259,27 @@ const Skill = styled.li`
   `}
   ${props => props.right && css`
     float: right;
+  `}
+  
+  ${props => props.rnSkill && css`
+    margin-right: -100px;
+  `}
+
+  ${props => props.medium && css`
+    width: 180px;
+  `}
+  ${props => props.regular && css`
+    width: 140px;
+  `}
+  ${props => props.huge && css`
+    width: 350px;
+  `}
+
+  ${props => props.mobileJs && css`
+    @media screen and (max-width: 820px) {
+      float: left;
+      margin-left: 70px;
+    }
   `}
 `
 
@@ -244,6 +292,26 @@ const Title = styled.h2`
 
 const Container = styled.div`
 
+`
+
+const Disclaimer = styled.p`
+  padding: 0 190px;
+  margin: 10px 0 60px;
+  line-height: 24px;
+
+  @media screen and (max-width: 820px) {
+    padding: 0 90px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+`
+
+const FirstRow = styled.div`
+  @media screen and (max-width: 820px) {
+    height: 120px;
+  }
 `
 
 export default SkillsSlide
