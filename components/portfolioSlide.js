@@ -88,7 +88,7 @@ const PortfolioSlide = () => {
             <Wrapper contactme>
               <Image visibilityHidden src="/images/social-wzrds.jpg" alt="WZRDS" />
               <HoverMe id="hover-me">Hover me!</HoverMe>
-              <ContactMe id="contact-me">Contact me! <br /> Let's build your project and add it here!</ContactMe>
+              <ContactMe id="contact-me">Contact me! <br /> Let&apos;s build your project and add it here!</ContactMe>
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
