@@ -32,7 +32,7 @@ const Summary = styled.p`
   color: ${colors.white};
   max-width: 1000px;
   line-height: 28px;
-  font-size: 20px;
+  font-size: 18px;
 
   @media screen and (max-width: 1100px) {
     max-width: 800px;

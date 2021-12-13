@@ -44,7 +44,7 @@ const SkillsSlide = () => {
       <Cell fullWidth>
         <Title>Expertise</Title>
         <Disclaimer>
-          These are the languages/frameworks which I most skilled with. I have experience with many other languages and libraries, where I am not an expert, but I can help.
+          These are the languages/frameworks which I am most skilled with. I have experience with many other languages and libraries, where I am not an expert, but I can help.
         </Disclaimer>
         <List>
           <FirstRow>
@@ -298,6 +298,7 @@ const Disclaimer = styled.p`
   padding: 0 190px;
   margin: 10px 0 60px;
   line-height: 24px;
+  font-size: 18px;
 
   @media screen and (max-width: 820px) {
     padding: 0 90px;

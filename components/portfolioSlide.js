@@ -31,7 +31,7 @@ const PortfolioSlide = () => {
       <Container>
         <Cell>
           <Wrapper>
-            <Image src="/images/social-cmg.png" alt="Crypto Management Group" />
+            <Image src="/images/social-newskit.png" alt="NewsKit" />
             <InfoContainer className="more-info">
               <InfoWrapper>
                 <span>Click for more information</span>
@@ -41,7 +41,7 @@ const PortfolioSlide = () => {
         </Cell>
         <Cell>
           <Wrapper>
-            <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
+            <Image src="/images/social-cmg.png" alt="Crypto Management Group" />
             <InfoContainer className="more-info">
               <InfoWrapper>
                 <span>Click for more information</span>
@@ -53,7 +53,7 @@ const PortfolioSlide = () => {
       <Container>
         <Cell>
           <Wrapper>
-            <Image src="/images/social-newskit.png" alt="NewsKit" />
+            <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
             <InfoContainer className="more-info">
               <InfoWrapper>
                 <span>Click for more information</span>
@@ -211,6 +211,7 @@ const Container = styled.div`
 const Clarification = styled.p`
   color: ${colors.white};
   text-align: center;
+  font-size: 18px;
   line-height: 24px;
 `
 
