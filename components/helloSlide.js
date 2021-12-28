@@ -31,11 +31,16 @@ const Image = styled.img`
   max-width: 300px;
   max-height: 300px;
   box-shadow: 0px 5px 15px #91919126;
-  
+  transition: 1s;
+
   @media screen and (max-width: 950px) {
     margin-bottom: 30px;
     max-width: 250px;
     max-height: 250px;
+  }
+
+  &:hover {
+    transform: scaleX(-1);
   }
 `
 

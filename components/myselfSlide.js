@@ -21,7 +21,7 @@ const MyselfSlide = () => {
 
         <Info>
           On the other side, I am looking for side projects, where I can demonstrate my skills and help people and companies to improve their tech side of the business. 
-          In me you will always find a person who can give 100% honest opinions and share valuable improvements and suggestions that you are not aware.
+          In me you will always find a person who can give 100% honest opinions and share valuable improvements and suggestions that you are not aware of.
           Otherwise we can always sit down and talk about tech, real estates, dogs and sport. These are the 4 fields that are very close to my heart and I can talk (and listen) all day about that.
         </Info>
         <ImageWrapper>
@@ -32,17 +32,17 @@ const MyselfSlide = () => {
   )
 }
 
-const Title = styled.h3`
+const Title = styled.h2`
   text-align: center;
   color: ${colors.white};
-  font-size: 26px;
+  font-size: 32px;
 `
 const Summary = styled.p`
   text-align: center;
   color: ${colors.white};
   max-width: 1000px;
   line-height: 28px;
-  font-size: 20px;
+  font-size: 18px;
 `
 
 const Container = styled.div`
@@ -62,7 +62,7 @@ const Info = styled.div`
   padding-right: 30px;
   padding-top: 60px;
   color: ${colors.white};
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   vertical-align: top;
   text-align: center;

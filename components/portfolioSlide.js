@@ -104,7 +104,7 @@ const PortfolioSlide = () => {
 
 const Title = styled.h2`
   color: ${colors.white};
-  font-size: 26px;
+  font-size: 32px;
 `
 
 const Cell = styled.div`
