@@ -16,7 +16,7 @@ const HelloSlide = () => {
         <div>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#portfolio">Portfolio</NavLink>
-          <NavLink href="#myself">Me, myself and I</NavLink>
+          <NavLink href="#myself">About me</NavLink>
           <NavLink href="#contact">Contact me</NavLink>
         </div>
       </Cell>
@@ -109,6 +109,11 @@ const NavLink = styled.a`
   padding-bottom: 2px;
   font-size: 16px;
   cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 10px;
+  }
+
 `
 
 

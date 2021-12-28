@@ -48,6 +48,11 @@ const Logo = styled.img`
 const Label = styled.span`
   vertical-align: middle;
   display: inline-block;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-top: 10px;
+  }
 `
 
 const ButtonsWrapper = styled.div`
@@ -69,6 +74,10 @@ const SocialLink = styled.a`
   margin: 15px 0;
   padding: 0 15px;
   display: block;
+  
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 `
 
 export default ContactSlide

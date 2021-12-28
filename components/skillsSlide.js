@@ -44,25 +44,25 @@ const SkillsSlide = () => {
       <Cell fullWidth>
         <Title>Expertise</Title>
         <Disclaimer>
-          These are the languages/frameworks which I am most skilled with. I have experience with many other languages and libraries, where I am not an expert, but I can help.
+          These are the languages/frameworks which I am most skilled with. I have experience with many other languages and libraries, where I am not an expert, but I can bring a lot of value.
         </Disclaimer>
         <List>
           <FirstRow>
             <Skill mobileJs center medium ref={jsRef}>Javascript</Skill>
-            <Skill right medium ref={htmlRef}>HTML & CSS</Skill>
+            <Skill mobileHtml right medium ref={htmlRef}>HTML & CSS</Skill>
           </FirstRow>
           <div>
-            <Skill margin medium ref={tsRef} tsSkill>Typescript</Skill>
-            <Skill margin ref={reactRef}>React.js</Skill>
+            <Skill margin mobileJs medium ref={tsRef} tsSkill>Typescript</Skill>
+            <Skill margin mobileReact ref={reactRef}>React.js</Skill>
           </div>
           <div>
             <Skill ref={nodeRef}>Node.js</Skill>
-            <Skill margin medium ref={rnRef} rnSkill>React Native</Skill>
-            <Skill right ref={nextRef}>Next.js</Skill>
+            <Skill margin mobileNative medium ref={rnRef} rnSkill>React Native</Skill>
+            <Skill right mobileNext ref={nextRef}>Next.js</Skill>
           </div>
           <div>
-            <Skill margin regular ref={graphRef}>GraphQL</Skill>
-            <Skill margin regular ref={mongoRef}>MongoDB</Skill>
+            <Skill margin mobileGraph regular ref={graphRef}>GraphQL</Skill>
+            <Skill margin mobileMongo regular ref={mongoRef}>MongoDB</Skill>
           </div>
           <Xarrow
             start={jsRef}
@@ -148,7 +148,7 @@ const SkillsSlide = () => {
             <Skill>AWS</Skill>
           </div>
           <div>
-            <Skill huge>Salesforce Commerce Cloud</Skill>
+            <Skill mobileSalesforce huge>Salesforce Commerce Cloud</Skill>
           </div>
         </List>
       </Cell>
@@ -193,6 +193,10 @@ const CellWrapper = styled.div`
       border-right: 2px solid ${colors.blue02};
     }
   }
+  
+  @media screen and (max-width: 787px) {
+    padding: 32px;
+  }
 `
 
 
@@ -222,6 +226,10 @@ const List = styled.ul`
   text-align: center;
   padding: 0 40px 40px;
   margin-top: 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 0 40px;
+  }
 
 `
 
@@ -280,6 +288,60 @@ const Skill = styled.li`
       float: left;
       margin-left: 70px;
     }
+    @media screen and (max-width: 767px) {
+      float: left;
+      margin-left: 10px;
+    }
+  `}
+
+  ${props => props.mobileHtml && css`
+
+    @media screen and (max-width: 767px) {
+      float: right;
+      margin-left: 10px;
+      margin-top: 90px;
+    }
+  `}
+  ${props => props.mobileNext && css`
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
+  `}
+
+  ${props => props.mobileReact && css`
+
+    @media screen and (max-width: 767px) {
+      margin: 20px 0px;
+      float: right;
+    }
+  `}
+  ${props => props.mobileNative && css`
+
+    @media screen and (max-width: 767px) {
+      margin: 25px 30px;
+      float: right;
+    }
+  `}
+  ${props => props.mobileGraph && css`
+
+    @media screen and (max-width: 767px) {
+      margin: 130px 5px 5px;
+    }
+  `}
+  ${props => props.mobileMongo && css`
+
+    @media screen and (max-width: 767px) {
+      margin: 0px 20px 5px 5px;
+      float: right;
+    }
+  `}
+  ${props => props.mobileSalesforce && css`
+
+    @media screen and (max-width: 767px) {
+      margin: 10px 0;
+      width: 330px;
+    }
   `}
 `
 
@@ -300,7 +362,7 @@ const Disclaimer = styled.p`
   line-height: 24px;
   font-size: 18px;
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 1024px) {
     padding: 0 90px;
   }
 

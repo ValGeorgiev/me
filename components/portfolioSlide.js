@@ -166,6 +166,11 @@ const HoverMe = styled.p`
   left: calc(50% - 65px);
   font-size: 24px;
   transition: all .2s ease-in-out;
+
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 const ContactMe = styled.p`
@@ -177,6 +182,19 @@ const ContactMe = styled.p`
   padding: 0 70px;
   line-height: 28px;
   transition: all .2s ease-in-out;
+
+
+  @media screen and (max-width: 768px) {
+    bottom: calc(50% - 59px);
+    left: calc(50% - 235px);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    bottom: calc(50% - 70px);
+    left: calc(50% - 140px);
+    padding: 0;
+  }
 `
 
 const InfoContainer = styled.div`
