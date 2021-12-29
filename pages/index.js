@@ -14,7 +14,6 @@ const Home = () => {
     <>
       <Head>
         <title>Valentin Georgiev | Software Engineer</title>
-        <meta name="description" content="Valentin Georgiev - Software Engineer - Javascript, Reactjs, Nextjs" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalFonts />

@@ -19,8 +19,20 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="title" content="Real Estate Investor Sheet" />
-          
+          <meta name="title" content="Valentin Georgiev | Software Engineer" />
+          <meta name="description" content="Valentin Georgiev - Software Engineer - Javascript, Reactjs, Nextjs" />
+
+          <meta property="og:type" content="website"/>
+          <meta property="og:url" content="https://valgeorgiev.com" />
+          <meta property="og:title" content="Valentin Georgiev | Software Engineer" />
+          <meta property="og:description" content="Valentin Georgiev - Software Engineer - Javascript, Reactjs, Nextjs" />
+          <meta property="og:image" content="https://valgeorgiev.com/images/social.png" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://valgeorgiev.com" />
+          <meta property="twitter:title" content="Valentin Georgiev | Software Engineer" />
+          <meta property="twitter:description" content="Valentin Georgiev - Software Engineer - Javascript, Reactjs, Nextjs" />
+          <meta property="twitter:image" content="https://valgeorgiev.com/images/social.png" />
           {this.props.styleTags}
         </Head>
         <body>
