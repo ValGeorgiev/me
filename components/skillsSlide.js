@@ -38,7 +38,7 @@ const SkillsSlide = () => {
       <Cell>
         <CellWrapper>
           <Number>4.</Number>
-          Lecturing and helping people grow
+          Teaching and helping people grow
         </CellWrapper>
       </Cell>
       <Cell fullWidth>

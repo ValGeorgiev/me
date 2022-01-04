@@ -9,78 +9,92 @@ const PortfolioSlide = () => {
       <Container>
         <Cell>
           <Wrapper>
-            <Image src="/images/social-adidas.png" alt="adidas" />
-            <InfoContainer className="more-info">
-              <InfoWrapper>
-                <span>Click for more information</span>
-              </InfoWrapper>
-            </InfoContainer>
+            <a href="/project/adidas">
+              <Image src="/images/social-adidas.png" alt="adidas" />
+              <InfoContainer className="more-info">
+                <InfoWrapper>
+                  <span>Click for more information</span>
+                </InfoWrapper>
+              </InfoContainer>
+            </a>
           </Wrapper>
         </Cell>
         <Cell>
           <Wrapper>
-            <Image src="/images/social-thetimes.png" alt="The Times & The Sunday Times" />
-            <InfoContainer className="more-info">
-              <InfoWrapper>
-                <span>Click for more information</span>
-              </InfoWrapper>
-            </InfoContainer>
-          </Wrapper>
-        </Cell>
-      </Container>
-      <Container>
-        <Cell>
-          <Wrapper>
-            <Image src="/images/social-newskit.png" alt="NewsKit" />
-            <InfoContainer className="more-info">
-              <InfoWrapper>
-                <span>Click for more information</span>
-              </InfoWrapper>
-            </InfoContainer>
-          </Wrapper>
-        </Cell>
-        <Cell>
-          <Wrapper>
-            <Image src="/images/social-cmg.png" alt="Crypto Management Group" />
-            <InfoContainer className="more-info">
-              <InfoWrapper>
-                <span>Click for more information</span>
-              </InfoWrapper>
-            </InfoContainer>
+            <a href="/project/the-times">
+              <Image src="/images/social-thetimes.png" alt="The Times & The Sunday Times" />
+              <InfoContainer className="more-info">
+                <InfoWrapper>
+                  <span>Click for more information</span>
+                </InfoWrapper>
+              </InfoContainer>
+            </a>
           </Wrapper>
         </Cell>
       </Container>
       <Container>
         <Cell>
           <Wrapper>
-            <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
-            <InfoContainer className="more-info">
-              <InfoWrapper>
-                <span>Click for more information</span>
-              </InfoWrapper>
-            </InfoContainer>
+            <a href="/project/newskit">
+              <Image src="/images/social-newskit.png" alt="NewsKit" />
+              <InfoContainer className="more-info">
+                <InfoWrapper>
+                  <span>Click for more information</span>
+                </InfoWrapper>
+              </InfoContainer>
+            </a>
           </Wrapper>
         </Cell>
         <Cell>
           <Wrapper>
-            <Image src="/images/social-florence.png" alt="Tourist guide in Florence" />
-            <InfoContainer className="more-info">
-              <InfoWrapper>
-                <span>Click for more information</span>
-              </InfoWrapper>
-            </InfoContainer>
+            <a href="/project/cmg">
+              <Image src="/images/social-cmg.png" alt="Crypto Management Group" />
+              <InfoContainer className="more-info">
+                <InfoWrapper>
+                  <span>Click for more information</span>
+                </InfoWrapper>
+              </InfoContainer>
+            </a>
           </Wrapper>
         </Cell>
       </Container>
       <Container>
         <Cell>
           <Wrapper>
-            <Image src="/images/social-wzrds.jpg" alt="WZRDS" />
-            <InfoContainer className="more-info">
-              <InfoWrapper>
-                <span>Click for more information</span>
-              </InfoWrapper>
-            </InfoContainer>
+            <a href="/project/danuki">
+              <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
+              <InfoContainer className="more-info">
+                <InfoWrapper>
+                  <span>Click for more information</span>
+                </InfoWrapper>
+              </InfoContainer>
+            </a>
+          </Wrapper>
+        </Cell>
+        <Cell>
+          <Wrapper>
+            <a href="/project/tourist-guide-in-florence">
+              <Image src="/images/social-florence.png" alt="Tourist guide in Florence" />
+              <InfoContainer className="more-info">
+                <InfoWrapper>
+                  <span>Click for more information</span>
+                </InfoWrapper>
+              </InfoContainer>
+            </a>
+          </Wrapper>
+        </Cell>
+      </Container>
+      <Container>
+        <Cell>
+          <Wrapper>
+            <a href="/project/wzrds">
+              <Image src="/images/social-wzrds.jpg" alt="WZRDS" />
+              <InfoContainer className="more-info">
+                <InfoWrapper>
+                  <span>Click for more information</span>
+                </InfoWrapper>
+              </InfoContainer>
+            </a>
           </Wrapper>
         </Cell>
         <Cell>
@@ -98,6 +112,7 @@ const PortfolioSlide = () => {
           </a>
         </Cell>
       </Container>
+      <Note>NOTE: I worked on more projects which unfortunately are private. If you are interested, I can walk you through them on our 1:1 meeting.</Note>
     </>
   )
 }
@@ -231,6 +246,14 @@ const Clarification = styled.p`
   text-align: center;
   font-size: 18px;
   line-height: 24px;
+`
+
+const Note = styled.p`
+  color: ${colors.white};
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 26px;
 `
 
 export default PortfolioSlide
