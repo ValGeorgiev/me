@@ -8,7 +8,7 @@ const Footer = () => {
         <Link href="mailto:valentin.al.georgiev@gmail.com">valentin.al.georgiev@gmail.com</Link>
       </Cell>
       <Cell center>
-        <Link href="https://www.linkedin.com/in/val-georgiev/" target="_blank">/val-georgiev</Link>
+        <Link href="https://www.linkedin.com/in/val-georgiev/" target="_blank" rel="noreferrer">/val-georgiev</Link>
       </Cell>
       <Cell right>
         <Copyright>© Copyright. All rights reserved.</Copyright>

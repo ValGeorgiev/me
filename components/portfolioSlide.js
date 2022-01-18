@@ -35,8 +35,8 @@ const PortfolioSlide = () => {
       <Container>
         <Cell>
           <Wrapper>
-            <a href="/project/newskit">
-              <Image src="/images/social-newskit.png" alt="NewsKit" />
+            <a href="/project/virtue-alliance">
+              <Image src="/images/social-va.jpg" alt="Virtue Alliance" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>

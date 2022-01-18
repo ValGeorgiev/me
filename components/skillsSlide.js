@@ -5,6 +5,7 @@ import { useRef } from 'react';
 
 const SkillsSlide = () => {
   const tsRef = useRef(null)
+  const web3Ref = useRef(null)
   const jsRef = useRef(null)
   const reactRef = useRef(null)
   const htmlRef = useRef(null)
@@ -48,15 +49,16 @@ const SkillsSlide = () => {
         </Disclaimer>
         <List>
           <FirstRow>
-            <Skill mobileJs center medium ref={jsRef}>Javascript</Skill>
+            <Skill web3 regular ref={web3Ref}>Web 3</Skill>
+            <Skill mobileJs center medium ref={jsRef}>JavaScript</Skill>
             <Skill mobileHtml right medium ref={htmlRef}>HTML & CSS</Skill>
           </FirstRow>
           <div>
-            <Skill margin mobileJs medium ref={tsRef} tsSkill>Typescript</Skill>
+            <Skill margin mobileTs medium ref={tsRef} tsSkill>TypeScript</Skill>
             <Skill margin mobileReact ref={reactRef}>React.js</Skill>
           </div>
           <div>
-            <Skill ref={nodeRef}>Node.js</Skill>
+            <Skill nodeJs ref={nodeRef}>Node.js</Skill>
             <Skill margin mobileNative medium ref={rnRef} rnSkill>React Native</Skill>
             <Skill right mobileNext ref={nextRef}>Next.js</Skill>
           </div>
@@ -72,6 +74,16 @@ const SkillsSlide = () => {
             headSize={0}
             lineColor={colors.blue02}
             startAnchor="bottom"
+            endAnchor="top"
+          />
+          <Xarrow
+            start={jsRef}
+            end={web3Ref}
+            animateDrawing
+            strokeWidth={2}
+            headSize={0}
+            lineColor={colors.blue02}
+            startAnchor="left"
             endAnchor="top"
           />
           <Xarrow
@@ -226,6 +238,7 @@ const List = styled.ul`
   text-align: center;
   padding: 0 40px 40px;
   margin-top: 0;
+  position: relative;
 
   @media screen and (max-width: 767px) {
     padding: 0 0 40px;
@@ -283,7 +296,37 @@ const Skill = styled.li`
     width: 350px;
   `}
 
+  ${props => props.web3 && css`
+    position: absolute;
+    left: 10%;
+    top: 100px;
+
+    @media screen and (max-width: 1186px) {
+      left: 5%;
+    }
+    @media screen and (max-width: 1070px) {
+      top: 250px;
+    }
+    @media screen and (max-width: 939px) {
+      left: 0;
+    }
+    @media screen and (max-width: 820px) {
+      top: 50px;
+      left: 0;
+    }
+  `}
+
   ${props => props.mobileJs && css`
+    @media screen and (max-width: 820px) {
+      float: left;
+      margin-left: 210px;
+    }
+    @media screen and (max-width: 420px) {
+      float: left;
+      margin-left: 160px;
+    }
+  `}
+  ${props => props.mobileTs && css`
     @media screen and (max-width: 820px) {
       float: left;
       margin-left: 70px;
@@ -299,7 +342,7 @@ const Skill = styled.li`
     @media screen and (max-width: 767px) {
       float: right;
       margin-left: 10px;
-      margin-top: 90px;
+      margin-top: 140px;
     }
   `}
   ${props => props.mobileNext && css`
@@ -312,7 +355,7 @@ const Skill = styled.li`
   ${props => props.mobileReact && css`
 
     @media screen and (max-width: 767px) {
-      margin: 20px 0px;
+      margin: 60px 0px;
       float: right;
     }
   `}
@@ -341,6 +384,12 @@ const Skill = styled.li`
     @media screen and (max-width: 767px) {
       margin: 10px 0;
       width: 330px;
+    }
+  `}
+  ${props => props.nodeJs && css`
+
+    @media screen and (max-width: 767px) {
+      float: left;
     }
   `}
 `

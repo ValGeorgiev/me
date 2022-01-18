@@ -10,7 +10,8 @@ const logos = {
   'Optimizely': '/images/logos/optimizely-logo.png',
   'CircleCI': '/images/logos/circleci-logo.png',
   'Salesforce Commerce Cloud': '/images/logos/logo-salesforce.svg',
-  'React Native': '/images/logos/react.png'
+  'React Native': '/images/logos/react.png',
+  'Web 3': '/images/logos/web3js.jpeg',
 }
 
 export default logos

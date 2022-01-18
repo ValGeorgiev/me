@@ -14,7 +14,7 @@ const MyselfSlide = () => {
         In the past few years I gained a lot of experience in leading teams, delivering products and helping people become better human beings and engineers.
         <br />
         <br />
-        Currently I am working for the best global digital design + development firm and open source software organization - <FormidaLink href="https://formidable.com" target={"_blank"}>Formidable</FormidaLink>, 
+        Currently I am working for the best global digital design + development firm and open source software organization - <FormidaLink href="https://formidable.com" target={"_blank"} rel="noreferrer">Formidable</FormidaLink>, 
         as a hands-on Engineering Manager. I am very happy in the company, these people are amazing, so I am not looking for a permanent position.
       </Summary>
       <InnerWrapper>

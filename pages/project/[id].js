@@ -77,7 +77,7 @@ const Project = ({ project }) => {
                 project.company && (
                   <>
                     <InnerCell>
-                      <a href={project.companyLink} target="_blank"><Icon src="/images/office-building.png" /> {project.company}</a>
+                      <a href={project.companyLink} target="_blank" rel="noreferrer"><Icon src="/images/office-building.png" /> {project.company}</a>
                     </InnerCell>
                     <Hr />
                   </>
@@ -97,7 +97,7 @@ const Project = ({ project }) => {
                 project.link && (
                   <>
                     <InnerCell>
-                      <a href={project.link} target="_blank"><Icon src="/images/link.png" /> {project.displayLink}</a>
+                      <a href={project.link} target="_blank" rel="noreferrer"><Icon src="/images/link.png" /> {project.displayLink}</a>
                     </InnerCell>
                     <Hr />
                   </>

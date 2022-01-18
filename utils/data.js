@@ -50,17 +50,6 @@ const projects = [
     mobilePhotos: ['danuki-mobile-1.png', 'danuki-mobile-2.png', 'danuki-mobile-3.png'],
   },
   {
-    id: 'newskit',
-    title: 'NewsKit',
-    description: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
-    tech: ['React.js', 'Node.js', 'Jest', 'Cypress', 'AWS', 'Optimizely', 'CircleCI'],
-    times: '2019, 2020, 2021 years',
-    company: 'NewsUK',
-    companyLink: 'https://www.questers.com/newsuk',
-    link: 'https://www.newskit.co.uk/',
-    displayLink: 'newskit.co.uk',
-  },
-  {
     id: 'tourist-guide-in-florence',
     title: 'Tourist Guide in Florence',
     description: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
@@ -81,6 +70,17 @@ const projects = [
     displayLink: 'www.wzrds.io',
     photos: ['wzrds-desktop-1.png', 'wzrds-desktop-2.png', 'wzrds-desktop-3.png', 'wzrds-desktop-4.png'],
     mobilePhotos: ['wzrds-mobile-1.png', 'wzrds-mobile-2.png', 'wzrds-mobile-3.png'],
+  },
+  {
+    id: 'virtue-alliance',
+    title: 'Virtue Alliance',
+    description: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
+    tech: ['React.js', 'Next.js', 'Styled Components'],
+    times: '2022 year',
+    link: 'https://virtuealliancefeacc.z13.web.core.windows.net/',
+    displayLink: 'www.virtue-alliance.io',
+    photos: ['va-desktop-1.png', 'va-desktop-2.png', 'va-desktop-3.png', 'va-desktop-4.png', 'va-desktop-5.png'],
+    mobilePhotos: ['va-mobile-1.png', 'va-mobile-2.png', 'va-mobile-3.png', 'va-mobile-4.png'],
   },
 ]
 

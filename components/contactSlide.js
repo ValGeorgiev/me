@@ -8,7 +8,7 @@ const ContactSlide = () => {
       <Summary>I will respond for sure if you are looking for someone to build your website, mobile application or any other software or if you are software engineer who is looking for a career advice or just wants to explore new opportunities.</Summary>
       <Wrapper>
         <ButtonsWrapper>
-          <SocialLink href="https://www.linkedin.com/in/val-georgiev/" target="_blank">
+          <SocialLink href="https://www.linkedin.com/in/val-georgiev/" target="_blank" rel="noreferrer">
             <Logo src="/images/linkedin.svg" />
             <Label>/val-georgiev</Label>
           </SocialLink>
