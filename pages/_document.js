@@ -16,7 +16,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='en'>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta name="title" content="Valentin Georgiev | Software Engineer" />

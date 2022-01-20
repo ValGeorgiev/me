@@ -73,8 +73,8 @@ const projects = [
   },
   {
     id: 'virtue-alliance',
-    title: 'Virtue Alliance',
-    description: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
+    title: 'Virtue Alliance - Landing page',
+    description: 'Virtue Alliance is a decentralized autonomous organization (DAO) that focuses on the players. This is one of the few projects that I built it alone.',
     tech: ['React.js', 'Next.js', 'Styled Components'],
     times: '2022 year',
     link: 'https://virtuealliancefeacc.z13.web.core.windows.net/',
