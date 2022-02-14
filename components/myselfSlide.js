@@ -24,9 +24,13 @@ const MyselfSlide = () => {
           In me you will always find a person who can give 100% honest opinions and share valuable improvements and suggestions that you are not aware of.
           Otherwise we can always sit down and talk about tech, real estates, dogs and sport. These are the 4 fields that are very close to my heart and I can talk (and listen) all day about that.
         </Info>
-        <ImageWrapper>
-          <Image src='images/rocky-and-me.jpg' alt="rocky and me" />
-        </ImageWrapper>
+        <ImageContainer>
+
+          <ImageWrapper>
+            <Image src='images/rocky-and-me.jpg' alt="rocky and me" />
+            <Shadow></Shadow>
+          </ImageWrapper>
+        </ImageContainer>
       </InnerWrapper>
     </Container>
   )
@@ -74,11 +78,11 @@ const Info = styled.div`
   }
 `
 
-const ImageWrapper = styled.div`
+const ImageContainer = styled.div`
   display: inline-block;
   width: 50%;
   padding-left: 20px;
-  text-align: center;
+  position: relative;
 
   @media screen and (max-width: 768px) {
     padding-left: 0;
@@ -87,11 +91,25 @@ const ImageWrapper = styled.div`
   }
 `
 
+const ImageWrapper = styled.div`
+  text-align: center;
+  position: relative;
+`
+
 const Image = styled.img`
   width: 100%;
   border-radius: 5px;
   opacity: 0.9;
   max-width: 600px;
+`
+
+const Shadow = styled.div`
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-shadow: inset 0px 0px 20px 5px ${colors.blue03};
 `
 
 const FormidaLink = styled.a`

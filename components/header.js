@@ -8,6 +8,10 @@ const Header = () => {
         <Image src="/images/me-hq.jpg" alt="Valentin Georgiev" />
         <Label>Val Georgiev</Label>
       </a>
+
+      <MoreLink href="/#portfolio">
+        <Label>More projects</Label>
+      </MoreLink>
     </Wrapper>
   )
 }
@@ -15,6 +19,14 @@ const Header = () => {
 const Wrapper = styled.div`
   padding: 20px 40px;
   background: ${colors.white};
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+const MoreLink = styled.a`
+  vertical-align: middle;
+  line-height: 38px;
 `
 
 const Image = styled.img`

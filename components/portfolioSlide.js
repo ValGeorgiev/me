@@ -61,8 +61,8 @@ const PortfolioSlide = () => {
       <Container>
         <Cell>
           <Wrapper>
-            <a href="/project/danuki">
-              <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
+            <a href="/project/new-degen-order">
+              <Image src="/images/social-degenorder.jpeg" alt="New Degen Order" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
@@ -98,6 +98,20 @@ const PortfolioSlide = () => {
           </Wrapper>
         </Cell>
         <Cell>
+          <Wrapper>
+            <a href="/project/danuki">
+              <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
+              <InfoContainer className="more-info">
+                <InfoWrapper>
+                  <span>Click for more information</span>
+                </InfoWrapper>
+              </InfoContainer>
+            </a>
+          </Wrapper>
+        </Cell>
+      </Container>
+      <Container>
+        <Cell>
           <a href="mailto:valentin.al.georgiev@gmail.com">
             <Wrapper contactme>
               <Image visibilityHidden src="/images/social-wzrds.jpg" alt="WZRDS" />
@@ -111,6 +125,7 @@ const PortfolioSlide = () => {
             </Wrapper>
           </a>
         </Cell>
+        <Cell />
       </Container>
       <Note>NOTE: I worked on more projects which unfortunately are private. If you are interested, I can walk you through them on our 1:1 meeting.</Note>
     </>

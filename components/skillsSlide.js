@@ -49,7 +49,7 @@ const SkillsSlide = () => {
         </Disclaimer>
         <List>
           <FirstRow>
-            <Skill web3 regular ref={web3Ref}>Web 3</Skill>
+            <Skill web3 regular ref={web3Ref}>Web 3.0</Skill>
             <Skill mobileJs center medium ref={jsRef}>JavaScript</Skill>
             <Skill mobileHtml right medium ref={htmlRef}>HTML & CSS</Skill>
           </FirstRow>
