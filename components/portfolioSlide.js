@@ -9,110 +9,110 @@ const PortfolioSlide = () => {
       <Container>
         <Cell>
           <Wrapper>
-            <a href="/project/adidas">
+            <ProjectLink href="/project/adidas">
               <Image src="/images/social-adidas.png" alt="adidas" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
                 </InfoWrapper>
               </InfoContainer>
-            </a>
+            </ProjectLink>
           </Wrapper>
         </Cell>
         <Cell>
           <Wrapper>
-            <a href="/project/the-times">
+            <ProjectLink href="/project/the-times">
               <Image src="/images/social-thetimes.png" alt="The Times & The Sunday Times" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
                 </InfoWrapper>
               </InfoContainer>
-            </a>
+            </ProjectLink>
           </Wrapper>
         </Cell>
       </Container>
       <Container>
         <Cell>
           <Wrapper>
-            <a href="/project/virtue-alliance">
+            <ProjectLink href="/project/virtue-alliance">
               <Image src="/images/social-va.jpg" alt="Virtue Alliance" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
                 </InfoWrapper>
               </InfoContainer>
-            </a>
+            </ProjectLink>
           </Wrapper>
         </Cell>
         <Cell>
           <Wrapper>
-            <a href="/project/cmg">
+            <ProjectLink href="/project/cmg">
               <Image src="/images/social-cmg.png" alt="Crypto Management Group" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
                 </InfoWrapper>
               </InfoContainer>
-            </a>
+            </ProjectLink>
           </Wrapper>
         </Cell>
       </Container>
       <Container>
         <Cell>
           <Wrapper>
-            <a href="/project/new-degen-order">
-              <Image src="/images/social-degenorder.jpeg" alt="New Degen Order" />
+            <ProjectLink href="/project/new-degen-order">
+              <Image src="/images/social-degenorder.png" alt="New Degen Order" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
                 </InfoWrapper>
               </InfoContainer>
-            </a>
+            </ProjectLink>
           </Wrapper>
         </Cell>
         <Cell>
           <Wrapper>
-            <a href="/project/tourist-guide-in-florence">
+            <ProjectLink href="/project/tourist-guide-in-florence">
               <Image src="/images/social-florence.png" alt="Tourist guide in Florence" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
                 </InfoWrapper>
               </InfoContainer>
-            </a>
+            </ProjectLink>
           </Wrapper>
         </Cell>
       </Container>
       <Container>
         <Cell>
           <Wrapper>
-            <a href="/project/wzrds">
+            <ProjectLink href="/project/wzrds">
               <Image src="/images/social-wzrds.jpg" alt="WZRDS" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
                 </InfoWrapper>
               </InfoContainer>
-            </a>
+            </ProjectLink>
           </Wrapper>
         </Cell>
         <Cell>
           <Wrapper>
-            <a href="/project/danuki">
+            <ProjectLink href="/project/danuki">
               <Image src="/images/social-danuki.jpeg" alt="Danuki Dojo" />
               <InfoContainer className="more-info">
                 <InfoWrapper>
                   <span>Click for more information</span>
                 </InfoWrapper>
               </InfoContainer>
-            </a>
+            </ProjectLink>
           </Wrapper>
         </Cell>
       </Container>
       <Container>
         <Cell>
-          <a href="mailto:valentin.al.georgiev@gmail.com">
+          <ProjectLink href="mailto:valentin.al.georgiev@gmail.com">
             <Wrapper contactme>
               <Image visibilityHidden src="/images/social-wzrds.jpg" alt="WZRDS" />
               <HoverMe id="hover-me">Hover me!</HoverMe>
@@ -123,7 +123,7 @@ const PortfolioSlide = () => {
                 </InfoWrapper>
               </InfoContainer>
             </Wrapper>
-          </a>
+          </ProjectLink>
         </Cell>
         <Cell />
       </Container>
@@ -138,14 +138,18 @@ const Title = styled.h2`
 `
 
 const Cell = styled.div`
-  display: inline-flex;
-  flex-direction: column;
   text-align: center;
-  max-width: 500px;
+  display: inline-block;
+  width: 50%;
   color: ${colors.white};
   vertical-align: top;
   padding: 10px 15px;
   cursor: pointer;
+
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
   &:hover {
 
@@ -161,13 +165,12 @@ const Cell = styled.div`
 
 const Wrapper = styled.div`
   position: relative;
-  border-radius: 20px;
   overflow: hidden;
-  background: ${colors.white};
   height: 100%;
+  border-radius: 7px;
 
   ${props => props.contactme && css`
-
+    background: ${colors.white};
     &:hover {
       & #hover-me {
         top: -80px;
@@ -183,6 +186,7 @@ const Image = styled.img`
   width: 100%;
   transition: transform .5s ease;
   height: 100%;
+  border-radius: 7px;
 
   ${props => props.visibilityHidden && css`
     visibility: hidden;
@@ -221,9 +225,11 @@ const ContactMe = styled.p`
 
   @media screen and (max-width: 767px) {
     width: 280px;
-    bottom: calc(50% - 70px);
+    bottom: calc(50% - 45px);
     left: calc(50% - 140px);
     padding: 0;
+    font-size: 18px;
+    line-height: 22px;
   }
 `
 
@@ -246,14 +252,8 @@ const InfoWrapper = styled.div`
 `
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
+  max-width: 1000px;
+  margin: 0 auto;
 `
 
 const Clarification = styled.p`
@@ -269,6 +269,9 @@ const Note = styled.p`
   margin: 40px auto;
   text-align: center;
   line-height: 26px;
+`
+
+const ProjectLink = styled.a`
 `
 
 export default PortfolioSlide

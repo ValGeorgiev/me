@@ -37,6 +37,7 @@ const Image = styled.img`
     margin-bottom: 30px;
     max-width: 250px;
     max-height: 250px;
+    margin-top: 50px;
   }
 
   &:hover {

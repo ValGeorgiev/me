@@ -402,7 +402,7 @@ const Title = styled.h2`
 `
 
 const Container = styled.div`
-
+  padding-top: 50px;
 `
 
 const Disclaimer = styled.p`
