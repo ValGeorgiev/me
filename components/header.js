@@ -22,6 +22,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+  }
 `
 
 const MoreLink = styled.a`

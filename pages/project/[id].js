@@ -136,6 +136,11 @@ const Title = styled.h1`
   text-align: center;
   font-size: 48px;
   margin-top: 60px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    padding: 0 20px;
+  }
 `
 
 const Container = styled.div`
@@ -149,7 +154,7 @@ const ImagesContainer = styled.div`
 const InnerContainer = styled.div`
   max-width: 1400px;
   margin: 0 auto;
-  padding-bottom: 60px;
+  padding: 0 20px 60px;
 `
 
 const Wrapper = styled.div`
@@ -169,6 +174,16 @@ const Cell = styled.div`
     border-left: 1px solid ${colors.blue01};
     padding: 20px;
   `}
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+
+
+    ${props => props.small && css`
+      border-left: 0;
+      padding: 20px 0;
+    `}
+  }
 `
 
 const SubTitle = styled.h3`

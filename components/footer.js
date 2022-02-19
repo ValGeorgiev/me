@@ -20,6 +20,10 @@ const Footer = () => {
 const Container = styled.div`
   padding: 40px;
   background: ${colors.white};
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 20px 20px;
+  }
 `
 
 const Cell = styled.div`
@@ -34,6 +38,12 @@ const Cell = styled.div`
   ${props => props.right && css`
     text-align: right;
   `}
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
 `
 
 const Link = styled.a`
