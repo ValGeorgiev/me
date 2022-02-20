@@ -72,7 +72,7 @@ const SkillsSlide = () => {
             animateDrawing
             strokeWidth={2}
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
             startAnchor="bottom"
             endAnchor="top"
           />
@@ -82,7 +82,7 @@ const SkillsSlide = () => {
             animateDrawing
             strokeWidth={2}
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
             startAnchor="left"
             endAnchor="top"
           />
@@ -92,7 +92,7 @@ const SkillsSlide = () => {
             strokeWidth={2}
             animateDrawing
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
             startAnchor="bottom"
             endAnchor="top"
           />
@@ -102,7 +102,7 @@ const SkillsSlide = () => {
             strokeWidth={2}
             animateDrawing
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
           />
           <Xarrow
             start={reactRef}
@@ -110,7 +110,7 @@ const SkillsSlide = () => {
             strokeWidth={2}
             animateDrawing
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
           />
           <Xarrow
             start={reactRef}
@@ -118,7 +118,7 @@ const SkillsSlide = () => {
             strokeWidth={2}
             animateDrawing
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
           />
           <Xarrow
             start={reactRef}
@@ -126,7 +126,7 @@ const SkillsSlide = () => {
             strokeWidth={2}
             animateDrawing
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
           />
           <Xarrow
             start={tsRef}
@@ -134,7 +134,7 @@ const SkillsSlide = () => {
             strokeWidth={2}
             animateDrawing
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
           />
           <Xarrow
             start={nodeRef}
@@ -142,7 +142,7 @@ const SkillsSlide = () => {
             strokeWidth={2}
             animateDrawing
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
           />
           <Xarrow
             start={nodeRef}
@@ -150,7 +150,7 @@ const SkillsSlide = () => {
             strokeWidth={2}
             animateDrawing
             headSize={0}
-            lineColor={colors.blue02}
+            lineColor={colors.beige}
             startAnchor="bottom"
             endAnchor="top"
           />

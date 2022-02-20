@@ -25,9 +25,9 @@ const Home = () => {
         <Slide id="skills" noHeight>
           <SkillsSlide />
         </Slide>
-        <Slide id="portfolio" column>
+        <div id="portfolio">
           <PortfolioSlide />
-        </Slide>
+        </div>
         <Slide id="myself" column>
           <MyselfSlide />
         </Slide>
@@ -40,8 +40,6 @@ const Home = () => {
 }
 
 const Container = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
   height: 100%;
 `
 
@@ -52,6 +50,8 @@ const Slide = styled.div`
   padding: 0 40px;
   height: 100%;
   position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
 
   ${props => props.column && css`
     flex-direction: column;

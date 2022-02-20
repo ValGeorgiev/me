@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 
   @media screen and (max-width: 767px) {
-    padding: 20px;
+    padding: 20px;d
   }
 `
 
