@@ -71,7 +71,7 @@ const projects = [
     link: 'https://www.wzrds.io/',
     displayLink: 'www.wzrds.io',
     photos: ['wzrds-desktop-1.png', 'wzrds-desktop-2.png', 'wzrds-desktop-3.png', 'wzrds-desktop-4.png'],
-    mobilePhotos: ['wzrds-mobile-1.png', 'wzrds-mobile-2.png', 'wzrds-mobile-3.png'],
+    mobilePhotos: ['wzrds-mobile-1.png', 'wzrds-mobile-2.png', 'wzrds-mobile-3.png', 'wzrds-mobile-4.png'],
   },
   {
     id: 'virtue-alliance',

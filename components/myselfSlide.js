@@ -22,7 +22,7 @@ const MyselfSlide = () => {
         <Info>
           On the other side, I am looking for side projects, where I can demonstrate my skills and help people and companies to improve their tech side of the business. 
           In me you will always find a person who can give 100% honest opinions and share valuable improvements and suggestions that you are not aware of.
-          Otherwise we can always sit down and talk about tech, real estates, dogs and sport. These are the 4 fields that are very close to my heart and I can talk (and listen) all day about that.
+          Otherwise we can always sit down and talk about tech, real estates, dogs and sport. These are the 4 fields that are very close to my heart and I can talk (and listen) all day.
         </Info>
         <ImageContainer>
 

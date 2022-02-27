@@ -134,7 +134,7 @@ const PortfolioSlide = () => {
           </Cell>
           <Cell />
         </Container>
-        <Note>NOTE: I worked on more projects which unfortunately are private. If you are interested, I can walk you through them on our 1:1 meeting.</Note>
+        <Note>NOTE: I have worked on more projects which unfortunately are private. If you are interested, I can walk you through them on our 1:1 meeting.</Note>
       </ContainerWrapper>
     </PorfolioContainer>
   )
