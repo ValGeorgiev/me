@@ -228,9 +228,22 @@ const ImageWrapper = styled.div`
 const MobileImageWrapper = styled.div`
   padding: 0 60px;
   display: inline-block;
+  margin-bottom: 10px;
   ${props => props.length && css`
     width: ${100 / props.length}%;
   `}
+
+  @media screen and (max-width: 1000px) {
+    padding: 0 40px;
+    ${props => props.length && css`
+      width: ${100 / (props.length / 2)}%;
+    `}
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    padding: 0 20px;
+  }
 `
 
 const Device = styled.h3`
