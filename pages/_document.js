@@ -34,6 +34,22 @@ class MyDocument extends Document {
           <meta property="twitter:description" content="Valentin Georgiev - Software Engineer - Javascript, Reactjs, Nextjs" />
           <meta property="twitter:image" content="https://valgeorgiev.com/images/social.png" />
           {this.props.styleTags}
+          <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=G-WZFVGYG5P3`}
+          />
+          <script
+              dangerouslySetInnerHTML={{
+                  __html: `
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                      gtag('config', 'G-WZFVGYG5P3', {
+                      page_path: window.location.pathname,
+                      });
+                  `,
+              }}
+          />
         </Head>
         <body>
           <Main />
