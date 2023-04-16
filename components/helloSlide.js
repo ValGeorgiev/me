@@ -11,14 +11,14 @@ const HelloSlide = () => {
       <Cell>
         <Name><Nickname>Val</Nickname>entin Georgiev</Name>
         <Hr />
-        <Greeting>Hello, I&apos;m a Software Engineer and dog lover.<br /> Learn more about me and my work here.</Greeting>
+        <Greeting>Hello, I&apos;m a co-founder of <a href="https://primeweb.org">PrimeWeb</a>.<br /> Learn more about us <a href="https://primeweb.org">here</a>.</Greeting>
 
-        <div>
+        {/* <div>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#portfolio">Portfolio</NavLink>
           <NavLink href="#myself">About me</NavLink>
           <NavLink href="#contact">Contact me</NavLink>
-        </div>
+        </div> */}
       </Cell>
     </>
   )
@@ -106,6 +106,10 @@ const Greeting = styled.p`
   line-height: 34px;
   margin-top: 30px;
   margin-bottom: 40px;
+
+  & > a {
+    color: ${colors.beige};
+  }
 `
 
 const NavLink = styled.a`

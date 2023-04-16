@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Valentin Georgiev | Software Engineer</title>
+        <title>Valentin Georgiev | Software Engineer Consultant</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalFonts />
@@ -22,7 +22,7 @@ const Home = () => {
         <Slide first>
           <FirstSlide />
         </Slide>
-        <Slide id="skills" noHeight>
+        {/* <Slide id="skills" noHeight>
           <SkillsSlide />
         </Slide>
         <div id="portfolio">
@@ -33,7 +33,7 @@ const Home = () => {
         </Slide>
         <Slide id="contact">
           <ContactSlide />
-        </Slide>
+        </Slide> */}
       </Container>
     </>
   )
