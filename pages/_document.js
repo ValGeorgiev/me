@@ -33,6 +33,7 @@ class MyDocument extends Document {
           <meta property="twitter:title" content="Valentin Georgiev | Software Engineer" />
           <meta property="twitter:description" content="Valentin Georgiev - Software Engineer - Javascript, Reactjs, Nextjs" />
           <meta property="twitter:image" content="https://valgeorgiev.com/images/social.png" />
+          <link rel="canonical" href="https://valgeorgiev.com/" />
           {this.props.styleTags}
           <script
               async
